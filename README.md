@@ -3,6 +3,8 @@ ExamPrep
 Overview : 
 The ExamPrep is a web application designed to provide users with an interactive platform to test their knowledge on various subjects. Built using the MERN stack (MongoDB, Express.js, React, Node.js), the app offers a seamless user experience with responsive design, real-time scoring, and integration of animated elements.
 
+
+
 Technologies Used : 
 
 Frontend: React.js, React Router
@@ -14,7 +16,9 @@ Database: MongoDB
 Others: CSS (Tailwind CSS), Lordicon for animations
 
 
+
 Features : 
+
 
 User Authentication and Authorization - 
 
@@ -49,13 +53,15 @@ Mobile and Desktop Compatibility: Ensures the application is accessible and func
 CSS Framework: Utilizes Tailwind CSS for styling, ensuring a responsive and visually appealing interface.
 
 
-Backend Integration
+Backend Integration : 
 
 RESTful APIs: Integrates with backend services using REST APIs for data retrieval and storage.
 
 Database Integration: Stores user profiles and quiz data in MongoDB, ensuring data persistence and retrieval.
 
-Interactive Elements
+
+Interactive Elements : 
 
 Animations: Utilizes Lordicon for animated icons, enhancing user interface interactivity.
+
 Hover Effects: Implements CSS hover effects for buttons and links to improve user experience.
