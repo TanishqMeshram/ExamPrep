@@ -1,7 +1,7 @@
 ExamPrep
 
 Overview : 
-Briefly describe your project in a couple of sentences. Highlight its purpose, main functionalities, and target audience.
+The ExamPrep is a web application designed to provide users with an interactive platform to test their knowledge on various subjects. Built using the MERN stack (MongoDB, Express.js, React, Node.js), the app offers a seamless user experience with responsive design, real-time scoring, and integration of animated elements.
 
 Technologies Used : 
 
