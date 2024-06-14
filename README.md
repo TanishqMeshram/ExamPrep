@@ -6,9 +6,13 @@ The ExamPrep is a web application designed to provide users with an interactive 
 Technologies Used : 
 
 Frontend: React.js, React Router
+
 Backend: Node.js, Express.js
+
 Database: MongoDB
+
 Others: CSS (Tailwind CSS), Lordicon for animations
+
 
 Features : 
 
