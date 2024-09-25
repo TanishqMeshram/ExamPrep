@@ -9,7 +9,7 @@ const bcrypt = require('bcrypt');
 dotenv.config();
 
 // Connection URL
-const url = process.env.MONGO_URL || 'mongodb://localhost:27017';
+const url = process.env.MONGO_URL || 'mongodb+srv://tanishqmeshram88:vvK2h5V8Xw2ylSfQ@examprep.znyv8.mongodb.net/?retryWrites=true&w=majority&appName=ExamPrep';
 const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Database Name
@@ -19,6 +19,14 @@ const app = express();
 const port = process.env.PORT || '3000';
 app.use(bodyParser.json());
 app.use(cors());
+
+// // Serve static files from the React app
+// app.use(express.static(path.join(__dirname, '..', 'public')));
+
+// // Handle all other requests by serving the React apps
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+// });
 
 client.connect(err => {
     if (err) {

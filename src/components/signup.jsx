@@ -26,9 +26,9 @@ const SignUpPage = () => {
             password: form.password
           }),
         });
-        
+
         const result = await response.json();
-        console.log(result) ;
+        console.log(result);
         if (response.ok) {
           let req = await fetch("http://localhost:3000/users");
           let details = await req.json();
@@ -72,53 +72,53 @@ const SignUpPage = () => {
               />
             </div>
             <div className="mb-4">
-  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-    Email
-  </label>
-  <input
-    value={form.email}
-    onChange={handleChange}
-    placeholder='Enter your email'
-    type="email"
-    name="email"
-    id="email"
-    className="mt-1 text-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-    required
-  />
-</div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                Email
+              </label>
+              <input
+                value={form.email}
+                onChange={handleChange}
+                placeholder='Enter your email'
+                type="email"
+                name="email"
+                id="email"
+                className="mt-1 text-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                required
+              />
+            </div>
 
-<div className="mb-4">
-  <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-    Set Password
-  </label>
-  <input
-    value={form.password}
-    onChange={handleChange}
-    placeholder='Enter your password'
-    type="password"
-    name="password"
-    id="password"
-    className="mt-1 text-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-    required
-  />
-</div>
+            <div className="mb-4">
+              <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+                Set Password
+              </label>
+              <input
+                value={form.password}
+                onChange={handleChange}
+                placeholder='Enter your password'
+                type="password"
+                name="password"
+                id="password"
+                className="mt-1 text-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                required
+              />
+            </div>
 
-<div className="mb-6">
-  <label htmlFor="confirm_password" className="block text-sm font-medium text-gray-700">
-    Confirm Password
-  </label>
-  <input
-    ref={passwordRef2}
-    value={form.confirm_password}
-    onChange={handleChange}
-    placeholder='Confirm your password'
-    type="password"
-    name="confirm_password"
-    id="confirm_password"
-    className="mt-1 text-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-    required
-  />
-</div>
+            <div className="mb-6">
+              <label htmlFor="confirm_password" className="block text-sm font-medium text-gray-700">
+                Confirm Password
+              </label>
+              <input
+                ref={passwordRef2}
+                value={form.confirm_password}
+                onChange={handleChange}
+                placeholder='Confirm your password'
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+                className="mt-1 text-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                required
+              />
+            </div>
 
             {/* Email input field */}
             {/* Password input field */}
