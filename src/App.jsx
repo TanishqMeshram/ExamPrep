@@ -23,7 +23,7 @@ function App() {
       element: <SignUpPage/>
     },
     {
-      path: 'https://examprep-q0nfvvh3c-tanishqs-projects-4ceb3d6b.vercel.app/login',
+      path: '/login',
       element: <LoginPage/>
     },
     {
