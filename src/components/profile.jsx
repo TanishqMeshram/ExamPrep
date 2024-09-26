@@ -11,7 +11,7 @@ const Profile = () => {
     useEffect(() => {
         const fetchUserData = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/users/${username}`);
+                const response = await fetch(`https://examprep-0o81.onrender.com/users/${username}`);
                 if (response.ok) {
                     const data = await response.json();
                     setUserData(data);
