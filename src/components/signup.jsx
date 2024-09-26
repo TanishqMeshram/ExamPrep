@@ -15,7 +15,7 @@ const SignUpPage = () => {
   const saveDetails = async () => {
     if (form.password === form.confirm_password) {
       try {
-        const response = await fetch('http://localhost:3000/signup', {
+        const response = await fetch('https://examprep-0o81.onrender.com/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
