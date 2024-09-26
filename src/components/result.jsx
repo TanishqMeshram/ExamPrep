@@ -12,7 +12,7 @@ const QuizResult = () => {
     useEffect(() => {
         const getBestScore = async () => {
             try {
-                const response = await fetch('http://localhost:3000/users');
+                const response = await fetch('https://examprep-0o81.onrender.com/users');
                 const details = await response.json();
                 const user = details.find(u => u.username === username);
 
