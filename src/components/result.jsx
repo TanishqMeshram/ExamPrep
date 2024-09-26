@@ -27,7 +27,7 @@ const QuizResult = () => {
 
         const updateBestScore = async () => {
             try {
-                const response = await fetch('http://localhost:3000/update-score', {
+                const response = await fetch('https://examprep-0o81.onrender.com/update-score', {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
