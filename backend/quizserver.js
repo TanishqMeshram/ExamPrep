@@ -10,7 +10,7 @@ dotenv.config();
 
 // Connection URL
 const url = process.env.MONGO_URL || 'mongodb+srv://tanishqmeshram88:vvK2h5V8Xw2ylSfQ@examprep.znyv8.mongodb.net/?retryWrites=true&w=majority&appName=ExamPrep';
-const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
+const client = new MongoClient(url);
 
 // Database Name
 const dbName = 'ExamPrep';
