@@ -30,7 +30,7 @@ const SignUpPage = () => {
         const result = await response.json();
         console.log(result);
         if (response.ok) {
-          let req = await fetch("http://localhost:3000/users");
+          let req = await fetch("https://examprep-0o81.onrender.com/users");
           let details = await req.json();
           const user = details.find(u => u.email === form.email);
           navigate('/home', { state: { username: form.username } });
